@@ -13,7 +13,8 @@ ENV NEXT_TELEMETRY_DISABLED=1
 COPY package.json pnpm-lock.yaml ./
 
 # install dependencies inside container
-RUN pnpm install
+# RUN pnpm install
+RUN pnpm install --allow-build=sharp --allow-build=unrs-resolver
 
 # copy source code (used when no bind-mount)
 COPY . .

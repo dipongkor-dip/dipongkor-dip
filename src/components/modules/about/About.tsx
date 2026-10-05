@@ -5,9 +5,9 @@ export default function About() {
     <section className="mx-auto max-w-6xl py-20 px-5 text-foreground max-md:py-10">
       <h2 className="text-center text-2xl mb-2 font-bold max-md:text-xl max-md:text-start">1. About Me</h2>
       <p className="text-center max-md:text-start text-sm text-muted-foreground mb-8 max-w-2xl mx-auto max-md:mx-0">
-        National University, Bangladesh · Full-stack engineering · Self-directed upskilling
+        National University, Bangladesh · Full-Stack Engineering · Self-directed upskilling
       </p>
-      <div className="flex flex-col md:flex-row items-center gap-8">
+      <div className="flex flex-col items-center gap-8 md:flex-row">
         <div className="w-40 h-40 shrink-0 rounded-full overflow-hidden border">
           <Image
             src="https://i.ibb.co.com/dy9vNVx/image-1.png"
@@ -18,24 +18,20 @@ export default function About() {
           />
         </div>
 
-        <div className="hacker-panel flex-1 max-w-4xl space-y-3 rounded-lg p-5 text-sm">
-          <p className="text-justify leading-relaxed tracking-wide">
-            I am a Full Stack Web Developer with a strong self-learning background and a disciplined engineering mindset. Since early 2025, I have focused on
-            building production-ready web applications with practical, project-based experience.
+        <div className="hacker-panel max-w-4xl flex-1 space-y-4 rounded-lg p-5 text-sm leading-relaxed md:p-6">
+          <p>
+            I&apos;m Dipongkor, a full-stack developer studying at National University, Bangladesh. Since 2025, I&apos;ve been growing my skills through
+            self-directed study and hands-on web development projects.
           </p>
 
-          <p className="text-justify leading-relaxed tracking-wide">
-            My primary stack includes React, Next.js, Node.js, and TypeScript, supported by modern tools for API development, database design, authentication, and
-            deployment workflows.
+          <p>
+            My work spans frontend development with React, Next.js, and TypeScript, alongside backend services built with Node.js and Express, Python and FastAPI,
+            and Go with Echo. I work with PostgreSQL and MongoDB, and use tools such as Prisma, SQLAlchemy, GraphQL, and Docker across development and deployment.
           </p>
 
-          <p className="text-justify leading-relaxed tracking-wide">
-            I focus on clean architecture, performance, and maintainability to deliver user-friendly applications that scale reliably in real-world environments.
-          </p>
-
-          <p className="text-justify leading-relaxed tracking-wide">
-            In parallel, I regularly practice data structures and algorithms in C, C++, and Python to strengthen problem-solving depth and software engineering
-            fundamentals.
+          <p>
+            I care about clear architecture, thoughtful user experiences, and maintainable code. I also practice data structures and algorithms in C, C++, and Python
+            to keep strengthening my problem-solving and software engineering fundamentals.
           </p>
         </div>
       </div>

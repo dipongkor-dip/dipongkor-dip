@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <section className="mx-auto max-w-6xl py-20 px-5 text-foreground max-md:py-10">
+    <section className="mx-auto max-w-6xl pb-20 px-5 text-foreground max-md:py-10">
       <h2 className="text-2xl font-bold text-center mb-10 max-md:mb-2 max-md:text-xl max-md:text-start px-8">3. Featured Projects</h2>
 
       <div className="space-y-10 max-md:space-y-5">
