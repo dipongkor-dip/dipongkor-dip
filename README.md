@@ -18,7 +18,7 @@
 │      vector<string> frontend = {"React", "Next.js", "Tailwind CSS", "Redux"};            │
 │                                                                                          │
 │      vector<string> backend = {                                                          |
-|          "Express", "Prisma", "mongoose", "Echo", "GORM", "FastAPI"                      |
+|          "Express", "Prisma", "mongoose", "Echo", "GORM", "FastAPI", "GraphQL"           |
 |      };                                                                                  │
 │                                                                                          │
 │      vector<string> databases = {                                                        │
