@@ -1,7 +1,7 @@
 "use client";
 
 import React, {useState} from "react";
-import {Github, Linkedin, Mail} from "lucide-react";
+import {Github, Linkedin, Mail, Send} from "lucide-react";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -50,35 +50,35 @@ export default function ContactForm() {
 
   if (isSubmitted) {
     return (
-      <section className="mx-auto max-w-6xl py-20 px-5 text-foreground max-md:py-10">
-        <div className="rounded-xl border border-primary/35 bg-card/70 p-10 text-center shadow-sm backdrop-blur-sm">
-          <h2 className="mb-4 text-5xl font-black text-primary md:text-7xl">THANK YOU!</h2>
-          <p className="text-xl text-muted-foreground">Your message has been sent successfully.</p>
+      <section className="mx-auto max-w-6xl px-5 py-16 text-foreground max-md:py-8">
+        <div className="rounded-xl border border-primary/35 bg-card/70 p-8 text-center shadow-sm backdrop-blur-sm max-md:p-6">
+          <h2 className="mb-3 text-3xl font-bold text-primary md:text-5xl">THANK YOU!</h2>
+          <p className="text-base text-muted-foreground">Your message has been sent successfully.</p>
         </div>
       </section>
     );
   }
 
   return (
-    <section className="mx-auto max-w-6xl py-20 px-5 text-foreground max-md:py-10">
+    <section className="mx-auto max-w-6xl px-5 py-16 text-foreground max-md:py-8">
       <div className="w-full">
-        <h2 className="text-2xl font-bold text-center mb-16 max-md:mb-8 max-md:text-xl max-md:text-start px-8">4. Contact Me</h2>
+        <h2 className="mb-10 px-4 text-center text-xl font-bold max-md:mb-6 max-md:px-0 max-md:text-start max-md:text-lg">4. Contact Me</h2>
 
-        <div className="grid grid-cols-1 gap-8 md:flex md:justify-between">
-          <aside className="md:w-[10%]">
-            <div className="grid grid-cols-1 gap-3 p-2 md:p-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-[180px_minmax(0,1fr)]">
+          <aside>
+            <div className="grid grid-cols-3 gap-2 md:grid-cols-1">
               <a
                 href="mailto:dipongkorroy000@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative overflow-hidden rounded-lg px-4 py-4"
+                className="group relative overflow-hidden rounded-lg border border-border/60 px-2 py-3 text-center transition-colors hover:border-primary/40 hover:bg-card/40 md:px-3"
               >
                 <div className="flex w-full flex-col items-center text-center">
-                  <div className="mb-2 rounded-full border border-primary/40 p-2.5 transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_18px_rgba(34,255,155,0.35)]">
-                    <Mail className="h-5 w-5 text-primary" />
+                  <div className="mb-1.5 rounded-full border border-primary/40 p-2 transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_18px_rgba(34,255,155,0.35)]">
+                    <Mail className="h-4 w-4 text-primary" />
                   </div>
-                  <p className="text-sm font-semibold">Email</p>
-                  <p className="mt-1 text-[11px] text-muted-foreground">Send a mail</p>
+                  <p className="text-xs font-semibold">Email</p>
+                  <p className="mt-1 text-[10px] text-muted-foreground">Send a mail</p>
                 </div>
               </a>
 
@@ -86,14 +86,14 @@ export default function ContactForm() {
                 href="https://github.com/dipongkor-dip"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative overflow-hidden rounded-lg px-4 py-4"
+                className="group relative overflow-hidden rounded-lg border border-border/60 px-2 py-3 text-center transition-colors hover:border-primary/40 hover:bg-card/40 md:px-3"
               >
                 <div className="flex w-full flex-col items-center text-center">
-                  <div className="mb-2 rounded-full border border-primary/40 p-2.5 transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_18px_rgba(34,255,155,0.35)]">
-                    <Github className="h-5 w-5 text-primary" />
+                  <div className="mb-1.5 rounded-full border border-primary/40 p-2 transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_18px_rgba(34,255,155,0.35)]">
+                    <Github className="h-4 w-4 text-primary" />
                   </div>
-                  <p className="text-sm font-semibold">GitHub</p>
-                  <p className="mt-1 text-[11px] text-muted-foreground">View profile</p>
+                  <p className="text-xs font-semibold">GitHub</p>
+                  <p className="mt-1 text-[10px] text-muted-foreground">View profile</p>
                 </div>
               </a>
 
@@ -101,23 +101,23 @@ export default function ContactForm() {
                 href="https://linkedin.com/in/dipongkor"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative overflow-hidden rounded-lg px-4 py-4"
+                className="group relative overflow-hidden rounded-lg border border-border/60 px-2 py-3 text-center transition-colors hover:border-primary/40 hover:bg-card/40 md:px-3"
               >
                 <div className="flex w-full flex-col items-center text-center">
-                  <div className="mb-2 rounded-full border border-primary/40 p-2.5 transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_18px_rgba(34,255,155,0.35)]">
-                    <Linkedin className="h-5 w-5 text-primary" />
+                  <div className="mb-1.5 rounded-full border border-primary/40 p-2 transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_18px_rgba(34,255,155,0.35)]">
+                    <Linkedin className="h-4 w-4 text-primary" />
                   </div>
-                  <p className="text-sm font-semibold">LinkedIn</p>
-                  <p className="mt-1 text-[11px] text-muted-foreground">Let&apos;s connect</p>
+                  <p className="text-xs font-semibold">LinkedIn</p>
+                  <p className="mt-1 text-[10px] text-muted-foreground">Let&apos;s connect</p>
                 </div>
               </a>
             </div>
           </aside>
 
-          <form onSubmit={handleSubmit} className="space-y-6 rounded border border-primary/35 bg-card/70 p-6 shadow-sm backdrop-blur-sm md:w-[80%] md:p-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <form onSubmit={handleSubmit} className="space-y-5 rounded-lg border border-primary/35 bg-card/70 p-5 shadow-sm backdrop-blur-sm md:p-6">
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
               <div>
-                <label htmlFor="name" className="mb-2 block text-sm font-medium text-muted-foreground">
+                <label htmlFor="name" className="mb-1.5 block text-xs font-medium text-muted-foreground">
                   Name
                 </label>
                 <input
@@ -128,12 +128,12 @@ export default function ContactForm() {
                   onChange={handleChange}
                   placeholder="Enter your name"
                   required
-                  className="w-full rounded-lg border border-input bg-background/40 px-4 py-1 text-foreground transition-colors placeholder:text-muted-foreground/70 focus:border-ring focus:outline-none focus:ring-2 focus:ring-ring/30 md:py-3"
+                  className="w-full rounded-lg border border-input bg-background/40 px-3 py-2 text-sm text-foreground transition-colors placeholder:text-muted-foreground/70 focus:border-ring focus:outline-none focus:ring-2 focus:ring-ring/30"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="mb-2 block text-sm font-medium text-muted-foreground">
+                <label htmlFor="email" className="mb-1.5 block text-xs font-medium text-muted-foreground">
                   Email
                 </label>
                 <input
@@ -144,40 +144,43 @@ export default function ContactForm() {
                   onChange={handleChange}
                   placeholder="your@email.com"
                   required
-                  className="w-full rounded-lg border border-input bg-background/40 px-4 py-1 text-foreground transition-colors placeholder:text-muted-foreground/70 focus:border-ring focus:outline-none focus:ring-2 focus:ring-ring/30 md:py-3"
+                  className="w-full rounded-lg border border-input bg-background/40 px-3 py-2 text-sm text-foreground transition-colors placeholder:text-muted-foreground/70 focus:border-ring focus:outline-none focus:ring-2 focus:ring-ring/30"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="message" className="mb-2 block text-sm font-medium text-muted-foreground">
+              <label htmlFor="message" className="mb-1.5 block text-xs font-medium text-muted-foreground">
                 Message
               </label>
-              <div className="relative rounded-2xl border border-primary/35 bg-gradient-to-b from-background/75 to-background/45 px-4 pb-3 pt-4 transition-all duration-200 before:absolute before:-left-2 before:top-7 before:h-4 before:w-4 before:rotate-45 before:border-b before:border-l before:border-primary/35 before:bg-background/70 focus-within:border-primary/60 focus-within:shadow-[0_0_0_3px_rgba(34,255,155,0.14)]">
+              <div className="relative rounded-xl border border-primary/35 bg-linear-to-b from-background/75 to-background/45 px-3 pb-2.5 pt-3 transition-all duration-200 before:absolute before:-left-2 before:top-7 before:h-4 before:w-4 before:rotate-45 before:border-b before:border-l before:border-primary/35 before:bg-background/70 focus-within:border-primary/60 focus-within:shadow-[0_0_0_3px_rgba(34,255,155,0.14)]">
                 <textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Write your message..."
-                  rows={7}
+                  rows={6}
                   required
-                  className="w-full min-h-[190px] resize-none bg-transparent px-1 py-1 text-sm leading-relaxed text-foreground outline-none placeholder:text-muted-foreground/70 md:text-base"
+                  className="w-full min-h-37.5 resize-none bg-transparent px-1 py-1 text-sm leading-relaxed text-foreground outline-none placeholder:text-muted-foreground/70"
                 />
-                <div className="mt-2 flex items-center justify-between text-[11px] text-muted-foreground">
+                <div className="mt-2 flex items-center justify-between text-[10px] text-muted-foreground">
                   <span>Say hello, ask a question, or share an opportunity.</span>
                   <span>{formData.message.length} chars</span>
                 </div>
               </div>
             </div>
 
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full rounded-lg bg-primary px-6 py-4 font-semibold text-primary-foreground transition-colors duration-200 hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50"
-            >
-              {isSubmitting ? "Sending..." : "Send Message"}
-            </button>
+            <div className="flex justify-end">
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="group inline-flex w-fit items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-all duration-200 hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
+                <Send size={15} className="transition-transform group-hover:translate-x-0.5" />
+              </button>
+            </div>
           </form>
         </div>
       </div>

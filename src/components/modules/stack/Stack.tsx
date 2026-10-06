@@ -29,7 +29,7 @@ const ORDERED_CATEGORIES = [
 ];
 
 function SkillItem({name, icon, role, level}: {name: string; icon: string; role: string; level: number}) {
-  const invertInDark = name === "GitHub" || name === "Express" || name === "Vercel";
+  const invertInDark = name === "GitHub" || name === "Vercel";
 
   return (
     <div className="flex min-w-0 items-center gap-4 border-l-2 border-primary/25 bg-card/50 px-4 py-3 transition-colors hover:border-primary hover:bg-card">
@@ -153,8 +153,8 @@ export default function Stack() {
 
   return (
     <section className="mx-auto max-w-6xl px-5 pt-20 max-md:py-10">
-      <h2 className="mb-2 text-2xl font-bold max-md:text-xl text-center">2. My Stack</h2>
-      <p className="mb-8 max-w-2xl mx-auto text-sm text-muted-foreground text-center">
+      <h2 className="text-xl font-bold text-center mb-4 max-md:mb-2 max-md:text-lg max-md:text-start px-8">2. My Stack</h2>
+      <p className="mb-6 max-w-2xl mx-auto text-sm text-muted-foreground text-center">
         A collection of technologies and tools I use to build and ship projects.
       </p>
 

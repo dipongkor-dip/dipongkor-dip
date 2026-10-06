@@ -18,18 +18,18 @@ const readableMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://dipongkorroy000.vercel.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://dipongkor000.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Dipongkor Roy · Full-stack developer",
-    template: "%s · Dipongkor Roy",
+    default: "Dipongkor | Developer",
+    template: "%s | Dipongkor ",
   },
-  description: "Portfolio of Dipongkor Roy — full-stack web development with React, Next.js, Node.js, and TypeScript. Projects, stack, and contact.",
-  keywords: ["Dipongkor Roy", "portfolio", "full-stack developer", "React", "Next.js", "TypeScript", "Node.js", "Bangladesh"],
-  authors: [{name: "Dipongkor Roy"}],
-  creator: "Dipongkor Roy",
+  description: "Portfolio of Dipongkor  — full-stack web development with React, Next.js, Node.js, and TypeScript. Projects, stack, and contact.",
+  keywords: ["Dipongkor ", "portfolio", "Developer", "React", "Next.js", "TypeScript", "Node.js", "Bangladesh"],
+  authors: [{name: "Dipongkor "}],
+  creator: "Dipongkor ",
   icons: {
     icon: "/brand-d.svg",
     apple: "/brand-d.svg",
@@ -38,21 +38,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "/",
-    siteName: "Dipongkor Roy",
-    title: "Dipongkor Roy · Full-stack developer",
+    siteName: "Dipongkor ",
+    title: "Dipongkor | Developer",
     description: "Full-stack web development with React, Next.js, Node.js, and TypeScript — portfolio, projects, and contact.",
     images: [
       {
         url: "/brand-d.svg",
         width: 512,
         height: 512,
-        alt: "Dipongkor Roy",
+        alt: "Dipongkor ",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dipongkor Roy · Full-stack developer",
+    title: "Dipongkor | Developer",
     description: "Full-stack web development with React, Next.js, Node.js, and TypeScript — portfolio, projects, and contact.",
     images: ["/brand-d.svg"],
   },

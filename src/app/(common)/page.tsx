@@ -3,6 +3,7 @@ import ContactForm from "@/src/components/modules/contact/ContactForm";
 import Hero from "@/src/components/modules/hero/Hero";
 import Projects from "@/src/components/modules/projects/Projects";
 import Stack from "@/src/components/modules/stack/Stack";
+import WorksWithEverything from "@/src/components/modules/stack/TechStack";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
 
         <div id="projects">
           <Projects />
+          <WorksWithEverything />
         </div>
 
         <div id="contact">

@@ -84,7 +84,7 @@ export const STACK_DATA: StackCategory[] = [
       },
       {
         name: "Express",
-        icon: "https://cdn.simpleicons.org/express/000000",
+        icon: "https://cdn.simpleicons.org/express/68A063",
         role: "BACKEND FRAMEWORK",
         level: 88,
         environment: "Node.js",
@@ -250,12 +250,6 @@ export const STACK_DATA: StackCategory[] = [
     title: "TOOLS",
     items: [
       {
-        name: "GitHub",
-        icon: "https://cdn.simpleicons.org/github/000000",
-        role: "VERSION CONTROL PLATFORM",
-        level: 95,
-      },
-      {
         name: "Git",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
         role: "VERSION CONTROL",
@@ -298,6 +292,12 @@ export const STACK_DATA: StackCategory[] = [
     title: "CLOUD & DEPLOYMENT",
     items: [
       {
+        name: "Vercel",
+        icon: "https://cdn.simpleicons.org/vercel/000000",
+        role: "WEB HOSTING PLATFORM",
+        level: 80,
+      },
+      {
         name: "Neon",
         icon: "https://cdn.simpleicons.org/neon/000000",
         role: "SERVERLESS POSTGRESQL",
@@ -310,10 +310,10 @@ export const STACK_DATA: StackCategory[] = [
         level: 75,
       },
       {
-        name: "Vercel",
-        icon: "https://cdn.simpleicons.org/vercel/000000",
-        role: "WEB HOSTING PLATFORM",
-        level: 80,
+        name: "Supabase",
+        icon: "https://cdn.simpleicons.org/supabase/3ECF8E",
+        role: "BACKEND PLATFORM",
+        level: 75,
       },
       {
         name: "Render",
@@ -322,9 +322,9 @@ export const STACK_DATA: StackCategory[] = [
         level: 72,
       },
       {
-        name: "Supabase",
-        icon: "https://cdn.simpleicons.org/supabase/3ECF8E",
-        role: "BACKEND PLATFORM",
+        name: "Aiven",
+        icon: "https://aiven.io/favicon.ico",
+        role: "CLOUD DATABASE PLATFORM",
         level: 75,
       },
     ],
@@ -353,8 +353,20 @@ export const STACK_DATA: StackCategory[] = [
     items: [
       {
         name: "JWT",
-        icon: "https://cdn.simpleicons.org/jsonwebtokens/000000",
+        icon: "https://jwt.io/img/pic_logo.svg",
         role: "TOKEN AUTHENTICATION",
+        level: 85,
+      },
+      {
+        name: "Passport.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/passport/passport-original.svg",
+        role: "AUTHENTICATION MIDDLEWARE",
+        level: 85,
+      },
+      {
+        name: "Firebase",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+        role: "FIREBASE AUTHENTICATION",
         level: 85,
       },
     ],

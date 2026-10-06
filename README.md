@@ -86,7 +86,6 @@
 ```text
 System Design
 Backend Architecture
-API Development
 Database Design
 Distributed Systems
 Performance & Scalability

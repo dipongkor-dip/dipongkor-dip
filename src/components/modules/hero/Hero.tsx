@@ -1,6 +1,6 @@
 "use client";
 
-import {Github, Linkedin, Mail} from "lucide-react";
+import {Download, Github, Linkedin, Mail} from "lucide-react";
 import smoothScrollTo from "@/src/components/smooth-scroll";
 import {Button} from "@/src/components/ui/button";
 
@@ -8,31 +8,37 @@ const Hero = () => {
   return (
     <section className="mx-auto max-w-6xl px-5 pt-28 max-md:pt-20">
       <div className="text-center space-y-4">
-        <h2 className="text-md max-md:text-sm bg-gradient-to-r from-primary via-chart-3 to-chart-2 bg-clip-text font-mono uppercase tracking-widest text-transparent">
+        <h2 className="text-sm max-md:text-xs bg-linear-to-r from-primary via-chart-3 to-chart-2 bg-clip-text font-mono uppercase tracking-widest text-transparent">
           Full-Stack Developer
         </h2>
-        <h1 className="text-4xl max-md:text-xl font-bold">
+        <h1 className="text-3xl max-md:text-lg font-bold">
           {`>_`} Hi, I&apos;m <span className="text-chart-3">Dipongkor</span>
         </h1>
-        <p className="max-w-xl max-md:text-sm mx-auto text-muted-foreground">
+        <p className="max-w-xl text-sm max-md:text-xs mx-auto text-muted-foreground">
           I build end-to-end web applications, from React and Next.js interfaces to backend APIs with Node.js, Python, and Go.
         </p>
 
-        <div className="flex gap-4 justify-center mt-6">
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
           <Button
             onClick={() => smoothScrollTo("contact")}
-            className="cursor-pointer transition-transform duration-500 ease-in-out hover:scale-95 max-md:px-2 max-md:text-sm"
+            className="h-9 cursor-pointer px-4 text-xs shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md max-md:h-8 max-md:px-3"
           >
             Contact Me
           </Button>
-          <a
-            href="https://drive.google.com/file/d/1HY2XB8vgf-Cc81ajXCb6fWRkSq1Hep9W/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="my-auto flex cursor-pointer items-center gap-1 border-none bg-none text-muted-foreground transition-colors hover:text-primary max-md:text-sm"
+          <Button
+            asChild
+            variant="outline"
+            className="h-9 gap-1.5 border-border/70 bg-card/40 px-4 text-xs shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/60 hover:bg-card/70 max-md:h-8 max-md:px-3"
           >
-            Download Resume
-          </a>
+            <a
+              href="https://drive.google.com/file/d/1HY2XB8vgf-Cc81ajXCb6fWRkSq1Hep9W/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Download className="size-3.5" />
+              Download Resume
+            </a>
+          </Button>
         </div>
 
         <div className="mt-8 flex justify-center gap-4">
