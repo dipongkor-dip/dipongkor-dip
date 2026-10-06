@@ -20,7 +20,7 @@ export default function About() {
 
         <div className="hacker-panel max-w-4xl flex-1 space-y-4 rounded-lg p-5 text-sm leading-relaxed md:p-6">
           <p>
-            I&apos;m Dipongkor, a full-stack developer studying at National University, Bangladesh. Since 2022, I&apos;ve been growing my skills through
+            I&apos;m Dipongkor, a full-stack developer studying at National University, Bangladesh. Since 2025, I&apos;ve been growing my skills through
             self-directed study and hands-on web development projects.
           </p>
 

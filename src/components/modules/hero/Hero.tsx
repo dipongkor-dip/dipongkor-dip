@@ -31,9 +31,7 @@ const Hero = () => {
             className="h-9 gap-1.5 border-border/70 bg-card/40 px-4 text-xs shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/60 hover:bg-card/70 max-md:h-8 max-md:px-3"
           >
             <a
-              href="https://drive.google.com/file/d/1HY2XB8vgf-Cc81ajXCb6fWRkSq1Hep9W/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://drive.google.com/uc?export=download&id=1eXfsavUyPDIiz1b1iHBhsLNxoDRl9LVS"
             >
               <Download className="size-3.5" />
               Download Resume
