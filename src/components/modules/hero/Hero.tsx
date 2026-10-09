@@ -1,10 +1,10 @@
-"use client";
-
 import {Download, Github, Linkedin, Mail} from "lucide-react";
-import smoothScrollTo from "@/src/components/smooth-scroll";
 import {Button} from "@/src/components/ui/button";
+import ContactButton from "@/src/components/modules/hero/ContactButton";
 
 const Hero = () => {
+  const resumeLink = `https://drive.google.com/uc?export=download&id=${process.env.RESUME_LINK_ID}`;
+
   return (
     <section className="mx-auto max-w-6xl px-5 pt-28 max-md:pt-20">
       <div className="text-center space-y-4">
@@ -19,19 +19,14 @@ const Hero = () => {
         </p>
 
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-          <Button
-            onClick={() => smoothScrollTo("contact")}
-            className="h-9 cursor-pointer px-4 text-xs shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md max-md:h-8 max-md:px-3"
-          >
-            Contact Me
-          </Button>
+          <ContactButton />
           <Button
             asChild
             variant="outline"
             className="h-9 gap-1.5 border-border/70 bg-card/40 px-4 text-xs shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/60 hover:bg-card/70 max-md:h-8 max-md:px-3"
           >
             <a
-              href="https://drive.google.com/uc?export=download&id=1eXfsavUyPDIiz1b1iHBhsLNxoDRl9LVS"
+              href={resumeLink}
             >
               <Download className="size-3.5" />
               Download Resume
